@@ -1,0 +1,20 @@
+.team {
+    min-height: 340px;
+    background: url('../img/team_bg.jpg') center (center / cover) no-repeat;
+    padding-top: 70px;
+    &__icon {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 80px;
+        }
+    }
+    &__title {
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+    }
+}

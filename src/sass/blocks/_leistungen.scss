@@ -1,0 +1,44 @@
+.leistungen {
+    height: 860px;
+    padding-top: 50px;
+    background-color: #f3f3f3;
+    &__title {
+        position: relative;
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    &__items {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 534px);
+        column-gap: 72px;
+        row-gap: 36px;
+    }
+    &__item {
+        display: flex;
+        &-icon {
+            flex: 0 0 64px;
+            margin-right: 22px;
+        }
+        &-descr {
+            display: flex;
+            flex-direction: column;
+        }
+        &-title {
+            margin: 0;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+            color: $main-color;
+        }
+        &-body {
+            font-size: 14px;
+            font-weight: 300;
+            color: #3a3a3a;
+        }
+    }
+}
