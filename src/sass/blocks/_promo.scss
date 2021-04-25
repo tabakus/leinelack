@@ -60,14 +60,14 @@
         }
     }
     &__title {
-        margin-top: 20px;
+        margin-top: 40px;
         text-align: center;
         font-size: 24px;
         font-weight: 300;
         color: #ffffff;
     }
     &__descr {
-        margin-top: 35px;
+        margin-top: 55px;
         text-align: center;
         font-size: 55px;
         line-height: 0.7;
@@ -87,7 +87,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 38px;
+        margin-top: 48px;
         width: 809px;
     }
     &__line {
@@ -101,5 +101,29 @@
         background-color: #fff;
         border-radius: 100%;
     }
-    
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+        column-gap: 90px;
+        margin-top: 55px;
+    }
+    &__item {
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70px;
+            img {
+                width: 70px;
+            }
+        }
+        &-descr {
+            margin-top: 35px;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 100;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
 }
