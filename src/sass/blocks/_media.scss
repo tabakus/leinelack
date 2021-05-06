@@ -187,4 +187,189 @@
     .container {
         width: 300px;
     }
+    .promo {
+        height: 870px;
+        &__burger-block {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__burger {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            z-index: 10;
+            span {
+                width: 30px;
+                height: 2px;
+                position: fixed;
+                top: 30px;
+                right: 5px;
+                transform: translate(-50%, -50%);
+                background-color: $main_color;
+                transition: 0.5s all;
+                &:nth-child(2) {
+                    top: calc(30px - 5px);
+                }
+                &:nth-child(3) {
+                    top: calc(30px + 5px);
+                }
+            }
+        }
+        &__burger-active {
+            span {
+                &:nth-child(1) {
+                    transform: translateX(200%);
+                }
+                &:nth-child(2) {
+                    top: 30px;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+                &:nth-child(3) {
+                    top: 30px;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
+        &__menu {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70%;
+            height: 100vh;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &-item {
+                border: none;
+                padding: 0;
+                a {
+                    font-size: 15px;
+                    line-height: 50px;
+                }
+            }
+        }
+        &__menu-active {
+            transform: translateX(0);
+        }
+        &__header {
+            justify-content: center;
+        }
+        &__logo {
+            flex: 0 0 250px;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 21px;
+            line-height: 1;
+            span {
+                font-size: 13px;
+            }
+        }
+        &__divider {
+            width: 260px;
+        }
+        &__line {
+            width: 115px;
+        }
+        &__items {
+            padding: 0 10px 0 10px;
+            grid-template-columns: 280px;
+        }
+        &__item-descr {
+            margin-top: 20px;
+        }
+    }
+    .leistungen {
+        height: 2310px;
+        padding-top: 25px;
+        &__title {
+            font-size: 22px;
+        }
+        &__items {
+            margin-top: 25px;
+            grid-template-columns: 280px;
+            padding: 0 10px 0 10px;
+        }
+    }
+    .team {
+        padding-top: 55px;
+        &__title {
+            padding: 0 10px 0 10px;
+            font-size: 15px;
+        }
+    }
+    .partner {
+        height: 2300px;
+        &__title {
+            margin-top: 30px;
+            font-size: 22px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__items {
+            padding: 0 10px 0 10px;
+            grid-template-columns: 280px;
+            row-gap: 10px;
+        }
+    }
+    .questions {
+        height: 520px;
+        &__body {
+            width: 300px;
+            height: 388px;
+        }
+        &__form {
+            display: block;
+        }
+        &__input {
+            width: 290px;
+            margin-bottom: 5px;
+        }
+        &__textarea {
+            height: 100px;
+        }
+    }
+    .footer {
+        height: 330px;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__wrapper {
+            display: block;
+            margin: 0 auto;
+            width: 280px;
+            margin-top: 20px;
+            &-logo {
+                flex: 0 0 76px;
+                img {
+                    width: 85%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            &-title {
+                display: none;
+            }
+        }
+        &__contacts {
+            width: 280px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    .pageup {
+        width: 30px;
+        height: 30px;
+        bottom: 30px;
+        right: 15px;
+    }
 }
