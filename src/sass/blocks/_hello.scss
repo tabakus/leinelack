@@ -1,0 +1,16 @@
+.hello {
+    height: 370px;
+    padding: 30px 0 30px 0;
+    background-color: #ffffff;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 562.5px);
+        column-gap: 15px;
+        &-descr {
+            margin: 10px 0;
+            font-size: 15px;
+            font-weight: 300;
+            color: #3a3a3a;
+        }
+    }
+}

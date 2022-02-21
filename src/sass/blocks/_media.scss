@@ -16,6 +16,16 @@
             margin-top: 40px;
         }
     }
+    .hello {
+        &__wrapper {
+            grid-template-columns: 562px 383px;
+            column-gap: 15px;
+            &-descr {
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }
+    }
     .leistungen {
         height: 750px;
         padding-top: 40px;
@@ -82,6 +92,22 @@
         &__items {
             grid-template-columns: repeat(2,355px);
             column-gap: 26px;
+        }
+    }
+    .hello {
+        height: 575px;
+        &__wrapper {
+            grid-template-columns: none;
+            grid-template-rows: 311px 200px;
+            justify-content: center;
+            row-gap: 15px;
+            &-photo {
+                display: block;
+                margin: 0 auto;
+            }
+            &-descr {
+                margin: 0 0 0 20px;
+            }
         }
     }
     .partner {
@@ -152,6 +178,22 @@
             padding: 0 128.5px 0 128.5px;
             grid-template-columns: 300px;
             row-gap: 20px;
+        }
+    }
+    .hello {
+        height: 590px;
+        &__wrapper {
+            grid-template-columns: none;
+            grid-template-rows: 311px 200px;
+            justify-content: center;
+            row-gap: 15px;
+            &-photo {
+                display: block;
+                margin: 0 auto;
+            }
+            &-descr {
+                margin: 0;
+            }
         }
     }
     .leistungen {
@@ -312,6 +354,9 @@
         &__item-descr {
             margin-top: 20px;
         }
+    }
+    .hello {
+        display: none;
     }
     .leistungen {
         height: 1800px;
